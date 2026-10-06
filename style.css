@@ -1,0 +1,25 @@
+/* Centers the text on the screen and gives it a clean look */
+body {
+    background-color:  #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: monospace;
+}
+h1{
+    font-size: 3rem;
+    border: 3px solid #fff;/*creates a blinkig cursor effect*/
+    white-space: nowrap;
+    overflow: hidden;
+    animation:blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+        from,to {border-color: transparent}
+        
+    50% {border-color: white}
+        
+}
