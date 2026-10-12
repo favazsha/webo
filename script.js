@@ -1,11 +1,11 @@
-// The text you want to appear
-const text = "Welcome to my website..."; 
+// Change this text to whatever you want to display!
+const text = "Hello World! Welcome to my site."; 
 let index = 0;
 
 function typeLetter() {
     if (index < text.length) {
-        // Add one letter to the h1 element
-        document.getElementById("WEBSITE").innerHTML += text.charAt(index);
+        // Safely add one letter at a time to the h1 element
+        document.getElementById("WEBSITE").textContent += text.charAt(index);
         index++;
         
         
@@ -14,5 +14,5 @@ function typeLetter() {
     }
 }
 
-//start the typing effect when the window loads
-window.onload = typeletter;
+// Fixed capitalization: Starts the typing effect when the window finishes loading
+window.onload = typeLetter; 
